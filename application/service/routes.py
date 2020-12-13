@@ -5,34 +5,34 @@ from flask import Flask,current_app as app, render_template, request
 
 
 
-@app.route('/')
+@app.route('/', methods=["GET"])
 def hello_world():
     return render_template("index.html")
 
-@app.route('/index')
+@app.route('/index', methods=["GET"])
 def index():
     return render_template("index.html")
 
-@app.route('/about')
+@app.route('/about', methods=["GET"])
 def about():
     return render_template("about.html")
 
-@app.route('/contact')
+@app.route('/contact', methods=["GET"])
 def contact():
     return render_template("contact.html")
 
-@app.route('/universitiesdetails')
+@app.route('/universitiesdetails', methods=["GET"])
 def universitydetails():
     return render_template("university-details.html")
 
-@app.route('/universities')
+@app.route('/universities', methods=["GET"])
 def universities():
     return render_template("universities.html")
 
-@app.route('/events')
+@app.route('/events', methods=["GET"])
 def events():
     return render_template("events.html")
 
-@app.route('/administrators')
+@app.route('/administrators', methods=["GET"])
 def administrators():
     return render_template("administrators.html")
