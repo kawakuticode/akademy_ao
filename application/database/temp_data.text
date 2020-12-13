@@ -1,0 +1,5 @@
+CREATE TABLE `AKDB`.`university` ( `uni_id` INT NOT NULL , `uni_name` VARCHAR(80) NOT NULL , `uni_country` VARCHAR(80) NOT NULL , `uni_city` VARCHAR(80) NOT NULL , PRIMARY KEY (`uni_id`)) ENGINE = InnoDB;
+
+CREATE TABLE `AKDB`.`faculty` ( `fac_id` INT NOT NULL , `fac_name` VARCHAR(200) NOT NULL , `fac_country` VARCHAR(200) NOT NULL , `fac_city` VARCHAR(200) NOT NULL , PRIMARY KEY (`fac_id`)) ENGINE = InnoDB;
+
+
